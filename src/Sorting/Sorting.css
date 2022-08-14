@@ -1,0 +1,101 @@
+.BarContainer {
+    display: flex;
+    height: 80vh;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: -.8vh;
+    margin-left: 1vw;
+    margin-right: 1vh;
+}
+
+.Bar{
+    max-height: 75vh;
+    margin-left: .3vw;
+    margin-right: .3vw; 
+    width: 1.75vw;
+    border-radius: 2rem 2rem 0rem 0rem;
+    padding: .2vw;
+    writing-mode: vertical-rl;
+    color: white;
+    font-size: .85rem;
+    font-weight: bold;
+    text-align: center;    
+}
+
+@media only screen and (max-width: 500px) {
+    .Bar{
+        font-size: .75rem;
+        margin-left: .75vw;
+        margin-right: .75vw; 
+        padding: .25rem;
+        width: 2vw;
+        text-align: center;
+    }
+}
+
+hr {
+    width: 100vw;
+}
+
+.title {
+    margin: 1vw;
+    color: white;
+}
+
+.controllerContainer {
+    display: flex;
+    justify-content: space-evenly;
+} 
+
+button {
+    margin: 1rem;
+    color: #45A29E;
+    font-size: 1rem;
+    border: 2px solid #45A29E;
+    padding: 1rem;
+    background: none;
+    border-radius: 35%;
+    cursor: pointer;
+}
+button:hover {
+    background-color: #45A29E;
+    color: white;
+}
+
+span{
+    font-size: 1rem;
+    color: white;
+    margin-right: .5vw;
+}
+
+.userInput {
+    display: flex;
+}
+
+@media only screen and (max-width: 500px) {
+    .userInput {
+        flex-direction: column;
+    }
+}
+
+input {
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: .1vw solid white;
+    transition: border-color 0.2s;
+    font-size: 1rem;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+    border-bottom: .25vw solid;
+    border-radius: .25rem;
+    padding-bottom: 6px;  
+    font-size: 1.1rem;
+    border-width: 3px;
+    border-image: linear-gradient(to right, #45A29E, cyan);
+    border-image-slice: 1;
+}
+
